@@ -1,0 +1,14 @@
+.list-group-item:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+.logout:hover {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+.logout {
+    text-decoration: none;
+    color:black;
+}

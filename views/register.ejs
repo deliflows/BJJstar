@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>BJJ Stars Register</title>
+</head>
+<body style="background-color: #000000;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 10px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BJJ Star</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <p style="display: flex; flex-wrap: wrap; justify-content:space-evenly; margin: 10px;">
+      <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Student</a>
+      <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Instructor</button>
+      <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">School</button>
+      <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">Close All Options</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body" style="margin-left:20px;">
+              <form action="/registerstudent" method="post">
+                  <div class="col-mb-4">
+                      <label for="usernameStudent" class="form-label">Username</label>
+                      <input type="text" name="studentUsername" class="form-control" id="usernameStudent" placeholder="Ex. squidward">
+                      <label for="passwordStudent" class="form-label">Password</label>
+                      <input type="password" name="studentPassword" class="form-control" id="passwordStudent">
+                      <label for="firstNameStudent" class="form-label">First Name</label>
+                      <input type="text" name="studentFirst" class="form-control" id="firstNameStudent" placeholder="John">
+                      <label for="lastNameStudent" class="form-label">Last Name</label>
+                      <input type="text" name="studentLast" class="form-control" id="lastNameStudent" placeholder="Doe">
+                      <label for="emailStudent" class="form-label">Email</label>
+                      <input type="email" name="studentEmail" class="form-control" id="emailStudent" placeholder="name@example.com">
+                      <label for="dobStudent" class="form-label">DOB</label>
+                      <input type="text" name="studentDOB" class="form-control" id="dobStudent" placeholder="YYYY-MM-DD">
+                      <label for="schoolNameStudent" class="form-label">Name of School</label>
+                      <input type="text" name="studentSchool" class="form-control" id="schoolNameStudent" placeholder="Ex. Gracie Barra">
+                      <label for="instructorStudent" class="form-label">Main Instructor</label>
+                      <input type="text" name="studentInstructor" class="form-control" id="instructorStudent" placeholder="John Doe">
+                      <label for="purpose" class="form-label">Purpose</label>
+                      <select class="form-select" name="studentPurpose" aria-label="Default select example" id="purpose">
+                          <option selected>Select</option>
+                          <option value="hobbyist">Hobbyist</option>
+                          <option value="competitor">Competitor</option>
+                        </select>
+                      <label for="beltStudent" class="form-label">Belt Color</label>
+                      <select class="form-select" name="studentBelt" aria-label="Default select example" id="beltStudent">
+                          <option selected>Select</option>
+                          <option value="white">White</option>
+                          <option value="blue">Blue</option>
+                          <option value="purple">Purple</option>
+                          <option value="brown">Brown</option>
+                          <option value="black">Black</option>
+                        </select>
+                      <label for="yearsStudent" class="form-label">Number of years training</label>
+                      <select class="form-select" name="studentYears" aria-label="Default select example" id="yearsStudent">
+                          <option selected>Select</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="10">10+</option>
+                        </select>
+                        <div class="mb-3">
+                          <label for="aboutStudent" class="form-label">What is your motto?</label>
+                          <textarea class="form-control" name="studentAbout" id="aboutStudent" rows="3" placeholder="Stop and smell the roses..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </div>
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+              <form action="/registerinstructor" method="post">
+                  <div class="col-mb-4">
+                      <label for="username" class="form-label">Username</label>
+                      <input type="text" name="instructorUsername"class="form-control" id="username" placeholder="Ex. squidward">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" name="instructorPassword" class="form-control" id="password">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" name="instructorFirst" class="form-control" id="firstName" placeholder="John">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" name="instructorLast" class="form-control" id="lastName" placeholder="Doe">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" name="instructorEmail" class="form-control" id="email" placeholder="name@example.com">
+                      <label for="dob" class="form-label">DOB</label>
+                      <input type="text" name="instructorDOB" class="form-control" id="dob" placeholder="YYYY-MM-DD">
+                      <label for="schoolName" class="form-label">Name of School</label>
+                      <input type="text" name="instructorSchool" class="form-control" id="schoolName" placeholder="Ex. Gracie Barra">
+                      <label for="belt" class="form-label">Belt Color</label>
+                      <select class="form-select" name="instructorBelt" aria-label="Default select example" id="belt">
+                          <option selected>Select</option>
+                          <option value="white">White</option>
+                          <option value="blue">Blue</option>
+                          <option value="purple">Purple</option>
+                          <option value="brown">Brown</option>
+                          <option value="black">Black</option>
+                        </select>
+                      <label for="years" class="form-label">Number of years training</label>
+                      <select class="form-select" name="instructorYears" aria-label="Default select example" id="years">
+                          <option selected>Select</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="10">10+</option>
+                        </select>
+                        <div class="mb-3">
+                          <label for="about" class="form-label">What is your life motto?</label>
+                          <textarea class="form-control" name="instructorAbout" id="about" rows="3" placeholder="Give a man a fish..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                  </div>
+              </form>
+           </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <div class="card card-body" style="margin-right:20px;">
+              <form action="/registerschool" method="post">
+                  <div class="col-mb-4">
+                     <label for="schoolUsername" class="form-label">Username</label>
+                     <input type="text" name="schoolUsername" class="form-control" id="schoolUsername" placeholder="Ex. squidward">
+                     <label for="schoolPassword" class="form-label">Password</label>
+                     <input type="password" name="schoolPassword" class="form-control" id="schoolPassword">
+                      <label for="nameOfSchool" class="form-label">School Name</label>
+                      <input type="text" name="nameOfSchool" class="form-control" id="nameOfSchool" placeholder="Gracie Barra Knoxville">
+                      <label for="location" class="form-label">Location</label>
+                      <input type="text" name="schoolLocation"  class="form-control" id="location" placeholder="101 Example Way, EX, 30000">
+                      <label for="umbrella" class="form-label">Umbrella School</label>
+                      <input type="text" name="schoolUmbrella"  class="form-control" id="umbrella" placeholder="Gracie Barra">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input type="text" name="schoolPhone"  class="form-control" id="phone" placeholder="800-555-5555">
+                      <label for="website" class="form-label">Website</label>
+                      <input type="text" name="schoolWebsite"  class="form-control" id="website" placeholder="www.graciebarra.com">
+                      <button type="submit" class="btn btn-dark" style="margin-top: 10px;">Submit</button>
+                  </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav class="navbar fixed-bottom bg-dark">
+      <div class="container-fluid">
+        <p style="color: rgb(123, 121, 121);">Developed by Blee  and designed by <a style="text-decoration: none; color: rgb(196, 196, 196);" href="https://getbootstrap.com/">BootStrap</a></p>
+      </div>
+    </nav>
+  </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

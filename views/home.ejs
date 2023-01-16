@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>BJJ Stars</title>
+</head>
+<body style="background-color: rgb(30, 33, 37);">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BJJ Star</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Register</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a> -->
+              <!-- <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul> -->
+            <!-- </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- <main>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="container">
+          <div class="inner cover">
+            <h1 class="cover-heading">Welcome to the BJJ Star system</h1>
+            <p class="lead">At BJJ Star, we make it our mission to help both students and instructors to communicate effectively. The idea is simple. Record moves you learn and reference them at a later date. Earn stars when you add a new move to your repertoire. Impress team mates with how many stars you have, and let your instructer know just how vast your knowledge base is. Get started by creating an account or logging in today!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> -->
+  <main>
+    <div class="hero">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="7000">
+            <img src="/images/bjj13.jpeg" class="d-block w-100" alt="..." style="height:400px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-size: 60px;">Welcome to BJJ Stars</h1>
+              <h3><a href="/register" class="btn btn-secondary" role="button" style="font-size: 23px;">Join</a> Today!</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="/images/bjj12.jpg" class="d-block w-100" alt="..." style="height:400px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>We keep track of your skills, so you don't have to.</h2>
+              <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="/images/bjj4.webp" class="d-block w-100" alt="..." style="height:400px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>All of the skills</h2>
+              <h5>From the wild once in a lifetime moves, to the mundane everyday foundations.</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="card-group">
+            <div class="card">
+              <img src="/images/bjj9.jpeg" class="card-img-top" alt="..." style="height: 220px;">
+              <div class="card-body">
+                <h5 class="card-title">Students</h5>
+                <ul>
+                  <li class="card-text">Keep track of your skills.</li>
+                  <li class="card-text">Earn stars as you go.</li>
+                  <li class="card-text">View other students progress.</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="/register" style="text-decoration: none; color: black; cursor: pointer;" >Register</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/images/bjj8.jpg" class="card-img-top" alt="..." style="height: 220px;">
+              <div class="card-body">
+                <h5 class="card-title">Instructors</h5>
+                <ul>
+                  <li class="card-text">Post recent and upcoming moves.</li>
+                  <li class="card-text">View your students' progress.</li>
+                  <li class="card-text">Add your own stars for future reference.</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="/register" style="text-decoration: none; color: black; cursor: pointer;" >Register</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/images/bjj13.webp" class="card-img-top" alt="..." style="height: 220px;">
+              <div class="card-body">
+                <h5 class="card-title">Schools</h5>
+                <ul>
+                  <li class="card-text">Keep track of students' progress.</li>
+                  <li class="card-text">View what your instructors are teaching.</li>
+                  <li class="card-text">Promote students in a timely manner.</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="/register" style="text-decoration: none; color: black; cursor: pointer;" >Register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider" style="color: white;">
+    <div class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="featurette-heading" style="color: white;"> What is BJJ Stars?</h2>
+            <p style="color: white;">Bjj Stars is designed for the Brazilian Jiu-Jitsu Practitioner. Whether you are a just begininng your Jiu-Jitsu journey, or have been studying for years, BJJ Stars is here to help.</p>
+            <p style="color: white">At it's core, BJJ Stars records any new skills you obtain. You can then reference the skills at a later date to refresh your memory.</p>
+            <p style="color: white">This is perfect for beginner's who often feel overwhelmed with the amount of information they consume. What was that move we learned last month? Oh yeah, it's in my BJJ Stars App.</p>
+            <p style="color: white">Record the moves now, while their still fresh in your mind. Because a year from now, that move Garcia taught at that one seminar may seem a little fuzzy.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="/images/star.jpg" alt="star" style="width: 300px; height: 250; border-radius:20px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider" style="color: white;">
+    <div class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="/images/bjj14.webp" alt="star" style="width: 300px; height: 250px; border-radius:20px;">
+          </div>
+          <div class="col-md-8">
+            <h2 class="featurette-heading" style="color: white;">Promotions</h2>
+            <p style="color: white;">Within larger schools, it can be difficult to determin who needs to be promoted and when.</p>
+            <p style="color: white">Some students are hobbyists just there to work out. And some students are extreme competitors focused on winning their next comp.</p>
+            <p style="color: white">They both may have the knowledge of a blue, or purple belt. Yet the roll very differently.</p>
+            <p style="color: white">The stars system is ideal for understaning who really knows what.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider" style="color: white;">
+    <div class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="featurette-heading" style="color: white;">Hobbyist vs Competitor</h2>
+            <p style="color: white;">When you register, you'll notice that there is an option for "hobbyist" or "competitor".</p>
+            <p style="color: white">This is essential for the instructor to know about the student.</p>
+            <p style="color: white">Basic fundamentals and expectations are required for both the casual learner, and the avid competitor.</p>
+            <p style="color: white">However, expectations are usually higher for the competitor. These expectations are normally not placed on the hobbyist. Therefore, BJJ Stars makes sure instructors keep the hoppyist in their sights and recoginzes their individual accomplishments.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="/images/feet.jpg" alt="star" style="width: 300px; height: 250px; border-radius:20px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider" style="color: white;">
+    <div class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="/images/bjj15.jpeg" alt="star" style="width: 350px; height: 200px; border-radius:20px;">
+          </div>
+          <div class="col-md-8">
+            <h2 class="featurette-heading" style="color: white;">About the Creator</h2>
+            <p style="color: white;">Betty Lee has been practicing Brazilian Jiu-Jitsu for over a decade.</p>
+            <p style="color: white">After taking a hiatus from BJJ during the Pandemic, she realized she'd forgotten some moves.</p>
+            <p style="color: white">Thinking, "Man, if only I'd taken more notes!", she created this site to help her and others along their Jiu Jitsu Journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <p style="color: rgb(123, 121, 121); text-align: center;">Developed by Blee  and designed by <a style="text-decoration: none; color: rgb(196, 196, 196);" href="https://getbootstrap.com/">BootStrap</a></p>
+      </div>
+    </nav>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

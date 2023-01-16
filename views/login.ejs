@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>BJJ Stars Login</title>
+</head>
+<body style="background-color: #0c0c0c;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 10px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BJJ Star</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <p style="display: flex; flex-wrap: wrap; justify-content:space-evenly; margin: 10px;">
+      <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" style="margin-bottom: 20px; margin-left: 5px;">Student Login</a>
+      <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" style="margin-bottom: 20px; margin-left: 5px;">Instructor Login</button>
+      <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" style="margin-bottom: 20px; margin-left: 5px;">School Login</button>
+      <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3" style="margin-bottom: 20px;">Close All Options</button>
+   </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body" style="margin-left:20px;">
+              <form action="/verificationstudent" method="post">
+                  <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="stuInput" placeholder="name@example.com" name="studentLoginEmail">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="stuPass" placeholder="Password" name="studentLoginPassword" style="margin-bottom: 20px;">
+                      <label for="stuPass">Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Login</button>
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+              <form action="/verificationinstructor" method="post">
+                  <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="insInput" placeholder="name@example.com" name="instructorLoginEmail">
+                      <label for="insInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="insPass" placeholder="Password" name="instructorLoginPassword" style="margin-bottom: 20px;">
+                      <label for="insPass">Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Login</button>
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <div class="card card-body" style="margin-right:20px;">
+              <form action="/verificationschool" method="post">
+                  <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="shcInput" placeholder="example" name="schoolLoginUsername">
+                      <label for="schInput">Username</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="schPass" placeholder="Password" name="schoolLoginPassword" style="margin-bottom: 20px;">
+                      <label for="schPass">Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark" style="display: flex;">Login</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav class="navbar fixed-bottom bg-dark">
+      <div class="container-fluid">
+        <p style="color: rgb(123, 121, 121); text-align: center;">Developed by Blee  and designed by <a style="text-decoration: none; color: rgb(196, 196, 196);" href="https://getbootstrap.com/">BootStrap</a></p>
+      </div>
+    </nav>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
