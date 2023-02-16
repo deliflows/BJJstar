@@ -9,6 +9,8 @@ const session = require('express-session')
 const cookieParser = require('cookie-parser');
 require("dotenv").config()
 app.use(bodyParser.urlencoded({ extended : true}));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended : true}));
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(cookieParser());
@@ -24,7 +26,7 @@ app.use(
     })
 )
 app.listen(portNumber, function(req, res){
-    console.log(`Listening on port ${portNumber}`);
+    console.log(`Listening on port http://localhost:${portNumber}`);
 })
 function checkAuth(req, res, next) {
     // if there is user info in the session, continue
