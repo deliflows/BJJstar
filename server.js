@@ -1,13 +1,16 @@
 const express = require('express');
 const app = express();
-const portNumber = 8000;
+const portNumber = process.env.PORT || 8000;
 const bodyParser = require('body-parser');
 const sequelize = require('sequelize');
 const { Instructor, OtherSkill, School, Skill, Student } = require('./models');
 const bcrypt = require('bcrypt');
 const session = require('express-session')
 const cookieParser = require('cookie-parser');
+require("dotenv").config()
 app.use(bodyParser.urlencoded({ extended : true}));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended : true}));
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(cookieParser());
@@ -23,7 +26,7 @@ app.use(
     })
 )
 app.listen(portNumber, function(req, res){
-    console.log(`Listening on port ${portNumber}`);
+    console.log(`Listening on port http://localhost:${portNumber}`);
 })
 function checkAuth(req, res, next) {
     // if there is user info in the session, continue
